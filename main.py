@@ -46,7 +46,6 @@ for word in details['text']:
 with open('result_text.txt',  'w', newline="") as file:
     csv.writer(file, delimiter=" ").writerows(parse_text)
 
-
 fh = open("result_text.txt", "r")
 myText = fh.read().replace("\n", " ")
 
